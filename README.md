@@ -1,2 +1,5 @@
-# Factorio-Mod-Template
-Este e um template desenvolvido por luis das artimanhas, que tem como objetivo, fazer um template ou padronizar a criação dos arquivos de mod.
+# Workers & Resources Soviet Republic Original Sound track Factorio Version
+
+Game by 3Division
+Original music by Rotem Hecht
+All right to music belong to 3DVISION s.r.o.
