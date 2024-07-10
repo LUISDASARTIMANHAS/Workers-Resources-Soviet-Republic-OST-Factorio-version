@@ -1,0 +1,62 @@
+-- data:extend(
+-- {
+-- -------------------------------------------------------------------------- MOD-category
+--   {
+--     type = "item-group",
+--     -- nome da categoria
+--     name = "MOD-category",
+--     order = "e",
+--     icon = "__MOD__/graficos/technology/technology.png",
+--     icon_size = 126,
+--     icon_mipmaps = 2
+--   },
+--   {
+--     type = "item-subgroup",
+--     -- nome usado para definir o grupo dos itens
+--     name = "auto-craft",
+--     -- indexando o grupo a categoria
+--     group = "MOD-category",
+--     -- ordem de A a Z e de cima para baixo para organização dos grupos
+--     order = "MOD-auto-craft"
+--   },
+--   {
+--     type = "item-subgroup",
+--     name = "component",
+--     group = "MOD-category",
+--     order = "MOD-component"
+--   },
+--   {
+--     type = "item-subgroup",
+--     name = "data-terminal",
+--     group = "MOD-category",
+--     order = "MOD-data-terminal"
+--   },
+--   {
+--     type = "item-subgroup",
+--     name = "processing",
+--     group = "MOD-category",
+--     order = "MOD-processing"
+--   },
+--   {
+--     type = "item-subgroup",
+--     name = "storage-ME",
+--     group = "MOD-category",
+--     order = "MOD-storage-ME"
+--   },
+--   {
+--     type = "item-subgroup",
+--     name = "resources-generated",
+--     group = "MOD-category",
+--     order = "MOD-resources-generated"
+--   }
+-- }
+-- )
+-- -------------------------------------------------------------------------- MOD-category
+
+-- -- categorias de receitas
+-- data:extend({
+--   {
+--       type = "recipe-category",
+--       name = "inscriber"
+--   }
+-- })

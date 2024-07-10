@@ -1,0 +1,17 @@
+{
+    "name": "MOD-name",
+    "version": "0.0.1",
+    "title": "MOD name",
+    "author": "AUTHOR",
+    "contact": "example@gmail.com",
+    "homepage": "https://github.com/LUISDASARTIMANHAS",
+    "description": "MOD description.",
+    "factorio_version": "1.1",
+    "dependencies": [
+        "base",
+        "flib",
+        "stdlib"
+    ],
+    "license": "GNU General Public License v3.0",
+    "thumbnail": "thumbnail.png"
+}
