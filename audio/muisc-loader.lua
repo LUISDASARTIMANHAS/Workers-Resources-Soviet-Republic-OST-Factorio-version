@@ -9,7 +9,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "./Workers & Resources Soviet Republic OST -  Call Me Back.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Call Me Back.ogg",
             volume = 1.2
         }
     },
@@ -19,7 +19,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Main Theme - Folk version.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Main Theme - Folk version.ogg",
             volume = 1.2
         }
     },
@@ -29,7 +29,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST -  Plan Filled to 130%.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_ Plan Filled to 130%.ogg",
             volume = 1.2
         }
     },
@@ -39,7 +39,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST -  Sergey - electronic version.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_ Sergey - electronic version.ogg",
             volume = 1.2
         }
     },
@@ -49,7 +49,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST -  Svetlana.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_ Svetlana.ogg",
             volume = 1.2
         }
     },
@@ -59,7 +59,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - 1979's  Swing.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_1979's  Swing.ogg",
             volume = 1.2
         }
     },
@@ -69,7 +69,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Anthem of Soviet Republic.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Anthem of Soviet Republic.ogg",
             volume = 1.2
         }
     },
@@ -79,7 +79,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Better Tomorrow.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Better Tomorrow.ogg",
             volume = 1.2
         }
     },
@@ -89,7 +89,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Black Eyes.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Black Eyes.ogg",
             volume = 1.2
         }
     },
@@ -99,7 +99,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Don't Touch Us.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Don't Touch Us.ogg",
             volume = 1.2
         }
     },
@@ -109,7 +109,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Future Arrived to the Republic.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Future Arrived to the Republic.ogg",
             volume = 1.2
         }
     },
@@ -119,7 +119,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - KRETCHMA.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_KRETCHMA.ogg",
             volume = 1.2
         }
     },
@@ -129,7 +129,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Old Bolshevik.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Old Bolshevik.ogg",
             volume = 1.2
         }
     },
@@ -139,7 +139,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Perestroika.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Perestroika.ogg",
             volume = 1.2
         }
     },
@@ -149,7 +149,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Sergey.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Sergey.ogg",
             volume = 1.2
         }
     },
@@ -159,7 +159,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Smychka.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Smychka.ogg",
             volume = 1.2
         }
     },
@@ -169,7 +169,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Songs of Harvesting.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Songs of Harvesting.ogg",
             volume = 1.2
         }
     },
@@ -179,7 +179,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Soviet Cartoons.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Soviet Cartoons.ogg",
             volume = 1.2
         }
     },
@@ -189,7 +189,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Soviet Dance Floor.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Soviet Dance Floor.ogg",
             volume = 1.2
         }
     },
@@ -199,7 +199,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Soviet Electro.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Soviet Electro.ogg",
             volume = 1.2
         }
     },
@@ -209,7 +209,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Soviet Republic's Army Choir.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Soviet Republic's Army Choir.ogg",
             volume = 1.2
         }
     },
@@ -219,7 +219,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - The Glory Of Soviet Union.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_The Glory Of Soviet Union.ogg",
             volume = 1.2
         }
     },
@@ -229,7 +229,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - The Rise of Metallurgy.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_The Rise of Metallurgy.ogg",
             volume = 1.2
         }
     },
@@ -239,7 +239,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - The Ruska Roma.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_The Ruska Roma.ogg",
             volume = 1.2
         }
     },
@@ -249,7 +249,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - The Vodka Waltz.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_The Vodka Waltz.ogg",
             volume = 1.2
         }
     },
@@ -259,7 +259,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Trojka.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Trojka.ogg",
             volume = 1.2
         }
     },
@@ -269,7 +269,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Worker's March - Folk version.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Worker's March - Folk version.ogg",
             volume = 1.2
         }
     },
@@ -279,7 +279,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Worker's March.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Worker's March.ogg",
             volume = 1.2
         }
     },
@@ -289,7 +289,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Working And Singing.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Working And Singing.ogg",
             volume = 1.2
         }
     },
@@ -299,7 +299,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Working Class.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Working Class.ogg",
             volume = 1.2
         }
     },
@@ -309,7 +309,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Working for the Leader.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Working for the Leader.ogg",
             volume = 1.2
         }
     },
@@ -332,7 +332,7 @@ data:extend({
         track_type = "menu-track",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Main Theme.ogg",
+            filename = path_main .. "Workers_and_Resources_Soviet_Republic_OST_Main Theme.ogg",
             volume = 1.2
         }
     }
