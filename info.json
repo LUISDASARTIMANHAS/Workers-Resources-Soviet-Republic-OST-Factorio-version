@@ -1,6 +1,6 @@
 {
     "name": "Workers-And-Resources-Soviet-Republic-OST",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "title": "Workers & Resources Soviet Republic OST",
     "author": "Luis Das Artimanhas",
     "contact": "example@gmail.com",
@@ -13,5 +13,5 @@
         "stdlib"
     ],
     "license": "GNU General Public License v3.0",
-    "thumbnail": "thumbnail.png"
+    "thumbnail": "thumbnail.jpg"
 }
