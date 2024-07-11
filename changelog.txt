@@ -1,5 +1,105 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
-Date: 09/07/2024
+Date: 10/07/2024
   Changes:
     - initial commit.
+  add sound tracks:
+    1 
+    Main Theme 
+    2: 18
+    2 
+    Soviet Electro 
+    2: 14 
+    3
+    Plan Filled to 130%
+    2: 27
+    4
+    Sergey
+    2: 07
+    5
+    Songs of Harvesting
+    2: 37
+    6
+    Svetlana
+    2: 24
+    7
+    The Rise of Metallurgy
+    1: 56
+    8
+    Working for the Leader
+    2: 29
+    9
+    Anthem of Soviet Republic
+    2: 33
+    10
+    Soviet Republic's Army Choir
+    2: 30
+    11
+    Worker's March
+    2: 19
+    12
+    Better Tomorrow
+    2: 10
+    13
+    Future Arrived to the Republic
+    2: 11
+    14
+    Soviet Dance Floor
+    2: 04
+    15
+    Soviet Republic Main Theme (Folk Version)
+    2: 03
+    16
+    Workers & March (Folk Version)
+    2: 48
+    17
+    Sergey (Electronic Version)
+    2: 51
+    18
+    Black Eyes (Ochi Chernyei)
+    1: 51
+    19
+    Blue Scarf
+    2: 16
+    20
+    Call Me Back
+    2: 43
+    21
+    Kretchma
+    2: 14
+    22
+    Trojka
+    2: 24
+    23
+    Don't touch us
+    1: 55
+    24
+    The Glory of Soviet Union
+    2: 22
+    25
+    Soviet Cartoons
+    2: 20
+    26
+    Working and singing
+    2: 51
+    27
+    The Ruska Roma
+    2: 51
+    28
+    1979's Swing
+    2: 18
+    29
+    Old Bolshevik
+    3: 16
+    30
+    Working class
+    3: 25
+    31
+    Perestroika
+    2: 52
+    32
+    The Vodka Waltz
+    2: 48
+    33
+    Smychka
+    3: 10
