@@ -1,14 +1,21 @@
 data:extend({
     {
         type = "bool-setting",
-        name = "mute",
+        name = "Workers-And-Resources-Soviet-Republic-OST_ambient_music_config",
         setting_type = "startup",
-        localised_name = "mute",
-        default_value = false
+        localised_name = "enable ambient music",
+        default_value = true
     },
     {
         type = "bool-setting",
-        name = "legacy_resources",
+        name = "Workers-And-Resources-Soviet-Republic-OST_music_menu_config",
+        setting_type = "startup",
+        localised_name = "enable menu music",
+        default_value = true
+    },
+    {
+        type = "bool-setting",
+        name = "Workers-And-Resources-Soviet-Republic-OST_legacy_resources",
         setting_type = "startup",
         localised_name = "legacy-resources",
         default_value = false

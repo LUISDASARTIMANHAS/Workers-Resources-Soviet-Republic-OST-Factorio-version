@@ -1,6 +1,6 @@
-local path_main = "__MOD__/audio/"
--- local ambientMusic = mod_ambient_music_config.value
--- local menuMusic = mod_menu_music_config.value
+local path_main = "__Workers-And-Resources-Soviet-Republic-OST__/audio/"
+-- local ambientMusic = Workers-And-Resources-Soviet-Republic-OST_ambient_music_config.value
+-- local menuMusic = Workers-And-Resources-Soviet-Republic-OST_menu_music_config.value
 
 data:extend({
     {
