@@ -1,1 +1,1 @@
-require("audio/music-loader.lua")
+require("audio/music-loader");
