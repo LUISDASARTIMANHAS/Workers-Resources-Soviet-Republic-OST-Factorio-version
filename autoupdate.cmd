@@ -16,8 +16,12 @@ if "%API_KEY%"=="" (
 
 :: Leitura da versão a partir do arquivo info.json
 for /f "tokens=2 delims=:," %%a in ('type info.json ^| findstr /C:"\"version\""') do (
-    set MOD_VERSION=%%~a
+    set "MOD_VERSION=%%~a"
 )
+
+:: Remove espaços em branco ao redor da versão
+set "MOD_VERSION=%MOD_VERSION: =%"
+set "MOD_VERSION=%MOD_VERSION:~1,-1%"
 
 :: Verifica se a versão foi obtida corretamente
 if "%MOD_VERSION%"=="" (
@@ -27,10 +31,14 @@ if "%MOD_VERSION%"=="" (
 
 :: Leitura do nome a partir do arquivo info.json
 for /f "tokens=2 delims=:," %%a in ('type info.json ^| findstr /C:"\"name\""') do (
-    set MOD_NAME=%%~a
+    set "MOD_NAME=%%~a"
 )
 
-:: Verifica se a versão foi obtida corretamente
+:: Remove espaços em branco ao redor do nome
+set "MOD_NAME=%MOD_NAME: =%"
+set "MOD_NAME=%MOD_NAME:~1,-1%"
+
+:: Verifica se o nome foi obtido corretamente
 if "%MOD_NAME%"=="" (
     echo Erro: Falha ao obter o nome do arquivo info.json.
     exit /b 1
@@ -48,8 +56,8 @@ if exist "%ZIP_FILE%" (
 
 :: Compacta todos os arquivos na pasta atual em um arquivo ZIP, excluindo .env e outros arquivos indesejados
 echo Compactando o mod em %ZIP_FILE%...
-tar -c -a -v -f "%ZIP_FILE%" --exclude=".env" --exclude="*.cmd" --exclude=".gitignore" --exclude="*.zip" --exclude="*.git"  -o "."
-@REM tar -c -a -v -f "%STEAM_FILE%\%ZIP_FILE%" --exclude=".env" --exclude="*.cmd" --exclude=".gitignore" --exclude="*.zip" --exclude="*.git"  -o "."
+tar -c -a -v -f "%ZIP_FILE%" --exclude=".env" --exclude="*.cmd" --exclude=".gitignore" --exclude="*.zip" --exclude="*.git" -o "."
+tar -c -a -v -f "%STEAM_FILE%/%ZIP_FILE%" --exclude=".env" --exclude="*.cmd" --exclude=".gitignore" --exclude="*.zip" --exclude="*.git" -o "."
 
 :: Verifica se o arquivo ZIP foi criado com sucesso
 if not exist "%ZIP_FILE%" (
@@ -58,7 +66,7 @@ if not exist "%ZIP_FILE%" (
 )
 
 :: Remover espaços em branco ao redor de AUTO_SEND
-set AUTO_SEND=%AUTO_SEND: =%
+set "AUTO_SEND=%AUTO_SEND: =%"
 
 if /i "%AUTO_SEND%"=="False" (
     echo Compactacao terminada. Auto publicar desativado. Saindo...

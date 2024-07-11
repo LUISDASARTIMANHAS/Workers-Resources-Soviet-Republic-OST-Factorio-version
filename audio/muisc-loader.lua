@@ -9,7 +9,7 @@ data:extend({
         track_type = "interlude",
         sound =
         {
-            filename = path_main .. "Workers & Resources Soviet Republic OST - Call Me Back.ogg",
+            filename = path_main .. "./Workers & Resources Soviet Republic OST -  Call Me Back.ogg",
             volume = 1.2
         }
     },

@@ -1,1 +1,1 @@
-require("audio/music-loader");
+require("audio.muisc-loader");
