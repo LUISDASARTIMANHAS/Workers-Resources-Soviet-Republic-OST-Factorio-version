@@ -10,6 +10,7 @@ if exist .env (
 
 :: Verifica se a chave de API foi carregada
 if "%API_KEY%"=="" (
+    echo API_KEY=default_preset >> .env
     echo Erro: A chave de API não foi carregada do arquivo .env.
     exit /b 1
 )
@@ -64,6 +65,24 @@ if not exist "%ZIP_FILE%" (
     echo Erro: Falha ao criar o arquivo ZIP.
     exit /b 1
 )
+
+:: Inicializa o repositório Git (se necessário)
+if not exist ".git" (
+    git init
+    git remote add origin https://github.com/LUISDASARTIMANHAS/Workers-Resources-Soviet-Republic-OST-Factorio-version.git
+)
+
+:: Verifica o status dos arquivos
+git status
+
+:: Adiciona todos os arquivos alterados, respeitando o .gitignore
+git add .
+
+:: Cria um commit com uma mensagem baseada no nome e versão do mod
+git commit -m "Automated commit for %MOD_NAME% version %MOD_VERSION%"
+
+:: Envia os arquivos para o repositório remoto na branch especificada
+git push origin main
 
 :: Remover espaços em branco ao redor de AUTO_SEND
 set "AUTO_SEND=%AUTO_SEND: =%"
