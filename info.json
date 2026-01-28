@@ -1,6 +1,6 @@
 {
     "name": "Workers-And-Resources-Soviet-Republic-OST",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "title": "Workers & Resources Soviet Republic OST",
     "author": "Luis Das Artimanhas",
     "contact": "luisaugustodesouza785@gmail.com",
@@ -9,8 +9,7 @@
     "factorio_version": "2.0",
     "dependencies": [
         "base",
-        "flib",
-        "stdlib"
+        "LDA-LIB >= 0.0.6"
     ],
     "license": "GNU General Public License v3.0",
     "thumbnail": "thumbnail.png"
