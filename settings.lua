@@ -13,11 +13,4 @@ data:extend({
         localised_name = "enable menu music",
         default_value = true
     },
-    {
-        type = "bool-setting",
-        name = "Workers-And-Resources-Soviet-Republic-OST_legacy_resources",
-        setting_type = "startup",
-        localised_name = "legacy-resources",
-        default_value = false
-    },
 })
