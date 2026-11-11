@@ -2,3 +2,6 @@
 .vscode/
 .git
 .env
+*.html
+docs/factorio-LDA-LIB/
+docs/factorio-LDA-LIB/**

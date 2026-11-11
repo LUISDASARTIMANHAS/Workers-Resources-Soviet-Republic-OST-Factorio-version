@@ -6,4 +6,9 @@
 ./.vscode/
 *.bat
 *.exe
+*.html
+/docs/**
+**/docs/
+**/docs/**
+docs
 exclusions.txt
