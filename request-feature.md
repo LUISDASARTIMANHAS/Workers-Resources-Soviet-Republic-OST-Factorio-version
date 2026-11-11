@@ -62,62 +62,21 @@ Detalhes específicos de engine (ex: "objetos Factorio são userdata", "persisti
 
 ## Solicitacoes Registradas
 
-### Aceitar objetos LuaPlayer e LuaSurface nos resolvers do Runtime
+### Opcoes de superficie para CreateInterludeAmbientSound (shared.control-utils)
 
-- **Status:** Disponivel (LDA-LIB v0.0.17)
-- **Funcao/API solicitada:** Corrigir `runtime/modules/player.get` e `runtime/modules/world.getSurface` para reconhecer objetos Factorio `LuaPlayer` e `LuaSurface` validos sem exigir `type(value) == "table"`. Para um objeto com `.valid`, os resolvers devem aceita-lo diretamente; nomes, indices e `nil` devem continuar funcionando como atualmente.
-- **Necessidade no mod:** A versao 0.0.16 rejeitava os objetos Lua do Factorio nos testes `type(player_or_id) == "table"` e `type(surface_or_id) == "table"`.
-- **Estagio do Factorio:** runtime
-- **Uso no projeto:** Todo o runtime (`control.lua`, `control/functions.lua`, `control/handle.lua`, `control/portal.lua`, `control/gui/portal-gui.lua`)
-- **Implementacao oficial:** Incorporado na LDA-LIB v0.0.17 com verificação `pcall(function() return target.valid end)`. Helper temporário `control/utils/lda-runtime.lua` removido.
-- **Compatibilidade:** LDA-LIB >= 0.0.17, Factorio 2.1+
-
-### Builder de Prototipo de Acumulador (createAccumulator)
-
-- **Status:** Disponivel (LDA-LIB v0.0.17)
-- **Funcao/API solicitada:** `LDA.createAccumulator(params)` (em `data-stage.builders.base.create-accumulator` e exportada via `init.lua`). Constrói protótipo `type = "accumulator"` modular aceitando nome, ícone, tamanho de colisão/seleção via bounding box, capacidade do buffer elétrico, limites de fluxo de entrada e saída (`input_flow_limit`, `output_flow_limit`), gráficos estáticos ou carregáveis (`chargable_graphics`), sons de operação e resistências.
-- **Necessidade no mod:** O Portal Quântico precisa ser uma estrutura de armazenamento de energia (acumulador) para conectar-se à rede elétrica e acumular energia de teletransporte sem apresentar janelas de montagem/receitas.
+- **Status:** Pendente de envio
+- **Tipo:** Melhoria de funcao existente
 - **Estagio do Factorio:** data-stage
-- **Uso no projeto:** `data/blocos/quantum-teleporter-portal.lua`
-- **Implementacao oficial:** Incorporado na LDA-LIB v0.0.17 via `LDAFunctions.createAccumulator`. Helper local `functions.createAccumulator` removido de `data/utils.lua`.
-- **Compatibilidade:** LDA-LIB >= 0.0.17, Factorio 2.1+
-
-### Modulo de Rede de Entidades (runtime.modules.network)
-
-- **Status:** Disponivel (LDA-LIB v0.0.17)
-- **Funcao/API solicitada:** `LDARuntime.network` (com funções como `register(network_name, entity, metadata)`, `unregister(network_name, entity_or_id)`, `getAll(network_name, force_name)`, `get(network_name, unit_number)`, `setName(network_name, unit_number, name)` e `findFreeSpawnPosition(entity, target_name, radius)`).
-- **Necessidade no mod:** O sistema de portais interligados precisa registrar e persistir em `storage` todos os portais existentes no universo, rastrear adições/remoções por robôs ou jogadores, validar a validade das entidades (`entity.valid`), e permitir consultas filtradas por força/time e superfície para montar rotas de teletransporte.
-- **Estagio do Factorio:** runtime
-- **Uso no projeto:** `control/portal.lua`, `control/gui/portal-gui.lua`
-- **Implementacao oficial:** Incorporado na LDA-LIB v0.0.17 via `LDARuntime.network`. Helper local `control/utils/portal-network.lua` removido.
-- **Compatibilidade:** LDA-LIB >= 0.0.17, Factorio 2.1+
-
-### Helpers de Interface Grafica (runtime.modules.gui)
-
-- **Status:** Disponivel (LDA-LIB v0.0.17)
-- **Funcao/API solicitada:** `LDARuntime.gui` (funções auxiliares para GUI de mods, como `findElementByName(root_element, name)` para busca recursiva segura em hierarquias complexas de containers, padronização de criação de janelas modais vinculadas a `player.opened` com botão fechar no titlebar, e formatação/criação de barras de status de energia).
-- **Necessidade no mod:** As janelas do Portal e do Equipamento possuem layouts estruturados com múltiplos fluxos aninhados (`flows`, `frames`). A busca recursiva de elementos e a formatação uniforme de Joules/Watts evitam duplicação de código.
-- **Estagio do Factorio:** runtime
-- **Uso no projeto:** `control/gui/portal-gui.lua`
-- **Implementacao oficial:** Incorporado na LDA-LIB v0.0.17 via `LDARuntime.gui` (`findElementByName`, `formatEnergy`, `closeWindow`, etc.).
-- **Compatibilidade:** LDA-LIB >= 0.0.17, Factorio 2.1+
-
-### Correcao de Colisao no Registro de Comandos do Runtime (runtime.commands / runtime.init)
-
-- **Status:** Disponivel (LDA-LIB v0.0.17)
-- **Funcao/API solicitada:** Proteção contra registro duplicado em `commands.register()` e isolamento do ponto de entrada do runtime quando consumido por outros mods.
-- **Necessidade no mod:** Evitar erro fatal `A script command already exists with the name: lda-list` ao fazer `require("__LDA-LIB__/runtime.init")`.
-- **Estagio do Factorio:** runtime
-- **Uso no projeto:** Todo o runtime (`control.lua`, `control/functions.lua`, `control/handle.lua`, `control/portal.lua`, `control/gui/portal-gui.lua`)
-- **Implementacao oficial:** Corrigido na LDA-LIB v0.0.17 com `if is_own_mod then ... commands.register() end`. Todos os arquivos agora importam `__LDA-LIB__/runtime.init` diretamente.
-- **Compatibilidade:** LDA-LIB >= 0.0.17, Factorio 2.1+
-
-### Helpers de Grade de Equipamento e Energia (runtime.modules.equipment_grid)
-
-- **Status:** Disponivel (LDA-LIB v0.0.17)
-- **Funcao/API solicitada:** `LDARuntime.equipment_grid` com funções como `getEnergy(grid)` e `drainEnergy(grid, amount_in_joules)`. No Factorio, `LuaEquipmentGrid` não possui método nativo `drain_energy`; a energia reside em cada `LuaEquipment.energy` individual.
-- **Necessidade no mod:** O teleporte pelo equipamento pessoal na armadura precisa ler a carga total disponível na grade e drenar uma cota de Joules de forma distribuída entre as baterias e equipamentos da armadura.
-- **Estagio do Factorio:** runtime
-- **Uso no projeto:** `control/handle.lua`
-- **Implementacao oficial:** Incorporado na LDA-LIB v0.0.17 via `LDARuntime.equipment_grid.getEnergy` e `LDARuntime.equipment_grid.drainEnergy`. Helpers locais em `control/handle.lua` removidos.
-- **Compatibilidade:** LDA-LIB >= 0.0.17, Factorio 2.1+
+- **Mod / Projeto Solicitante:** Workers-And-Resources-Soviet-Republic-OST v0.0.6
+- **Funcao/API solicitada:** permitir informar `play_on_all_surfaces` ou `planets` na criacao de uma faixa interlude e gerar propriedades compativeis com Factorio 2.1.
+- **Necessidade no mod:** No Factorio 2.1, faixas sem `planets` ou `surface_names` ficam restritas a plataformas e ao mapa espacial. O mod precisa continuar tocando em todas as superficies; a propriedade antiga `planetoptional` nao expressa essa regra.
+- **Exemplo de uso desejado:**
+  ```lua
+  LDA.utils.CreateInterludeAmbientSound(nameTrack, volume, {
+      play_on_all_surfaces = true
+  })
+  ```
+- **Comportamento em casos limite:** nao combinar `play_on_all_surfaces` com `planets` ou `surface_names`; converter um planeta opcional para `planets = { planetId }`.
+- **Frequencia de execucao:** sob demanda, durante o data-stage.
+- **Implementacao temporaria:** `utils/ambient-sound.lua` adapta o prototipo da LDA-LIB, remove `planetoptional` e define `play_on_all_surfaces = true` quando nenhum planeta e especificado.
+- **Compatibilidade:** Factorio 2.1; LDA-LIB >= 0.0.17; Space Age opcional.

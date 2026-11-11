@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.6
+Date: 11/11/2026
+  Changes:
+    - Updated ambient tracks for Factorio 2.1 surfaces.
+  fixes:
+    - Restored ambient music on all surfaces.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.4
 Date: 28/01/2026
   Changes:

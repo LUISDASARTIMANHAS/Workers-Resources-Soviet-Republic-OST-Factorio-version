@@ -1,5 +1,8 @@
 local LDA = require("__LDA-LIB__/init")
-local LDAUtils = LDA.utils
+local LDAUtils = {
+	CreateInterludeAmbientSound = require("utils.ambient-sound"),
+	CreateMenuAmbientSound = LDA.utils.CreateMenuAmbientSound,
+}
 local PATH = LDA.setBasePath("Workers-And-Resources-Soviet-Republic-OST")
 local folderMusic = PATH .. "audio/"
 -- local ambientMusic = Workers-And-Resources-Soviet-Republic-OST_ambient_music_config.value
